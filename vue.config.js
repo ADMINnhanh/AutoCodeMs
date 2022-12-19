@@ -7,7 +7,7 @@
  */
 module.exports = {
   lintOnSave: false,
-  outputDir: "AutoCodeMs",
+  outputDir: "dist",
   assetsDir: "assets",
   publicPath: "./",
   productionSourceMap: false,
