@@ -1,0 +1,437 @@
+// 弹窗-遮罩层
+.v-modal {
+  top: 60px;
+  height: calc(100% - 60px);
+}
+
+// 弹窗-wrapper
+.el-dialog__wrapper {
+  top: 60px;
+}
+
+// 菜单栏布局
+.horizontal,
+body {
+  .el-dialog__wrapper {
+    left: 0px;
+  }
+
+  .v-modal {
+    left: 0px;
+    width: 100%;
+  }
+
+  .pop_ups_box {
+    left: 0px;
+    width: 100%;
+  }
+}
+
+.vertical {
+  .el-dialog__wrapper {
+    left: 200px;
+  }
+
+  .v-modal {
+    left: 200px;
+    width: calc(100% - 200px);
+  }
+
+  .pop_ups_box {
+    left: 200px;
+    width: calc(100% - 200px);
+  }
+}
+
+// 修改弹窗样式
+.el-dialog {
+  .el-dialog__header {
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #d6d6d6a1;
+
+    .el-dialog__title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .el-dialog__close {
+      cursor: pointer;
+      color: #757575;
+      font-weight: 900;
+      font-size: 20px;
+    }
+
+    .el-dialog__close.el-icon-close {
+      // font-size: 28px;
+    }
+
+    .el-dialog__headerbtn {
+      top: 18px;
+    }
+  }
+
+  .el-dialog__body {
+    .avue--detail+.avue-dialog__footer {
+      display: none;
+    }
+  }
+
+  .avue-dialog__footer,
+  .el-dialog__footer {
+    border-top: 1px solid #e4e7ed;
+  }
+
+  .avue-form__menu {
+    border-top: 1px solid #e4e7ed;
+
+    .el-form-item {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// avue-宽度为：420px的弹窗
+.avue-dialog {
+  .el-dialog.w420 {
+    width: 420px !important;
+  }
+}
+
+// avue-宽度为：520px的弹窗
+.avue-dialog {
+  .el-dialog.w520 {
+    width: 520px !important;
+  }
+}
+
+// avue-宽度为：620px的弹窗
+.avue-dialog {
+  .el-dialog.w620 {
+    width: 620px !important;
+  }
+}
+
+// avue-修改详情表单样式
+.avue-form.avue--detail {
+
+  .el-row,
+  .el-col {
+    // border: none;
+  }
+
+  .el-form-item {
+    // background-color: #fff !important;
+  }
+
+  .el-form-item__label {
+    color: #666;
+    font-size: 14px;
+  }
+
+  .el-form-item__content {
+    // border: none;
+    // background-color: #f2f2f2d8;
+    // box-sizing: border-box;
+    // border-width: 1px;
+    // border-style: solid;
+    // border-color: rgba(215, 215, 215, 1);
+    // border-radius: 3px;
+    // color: #797979;
+    // padding-left: 16px;
+  }
+
+  .el-input.is-disabled .el-input__inner,
+  .el-range-editor.is-disabled,
+  .el-range-editor.is-disabled input,
+  .el-textarea.is-disabled .el-textarea__inner {
+    // background-color: #f2f2f2d8;
+  }
+}
+
+// 消息窗-wrapper
+.el-message-box__wrapper {
+  left: 200px;
+  top: 60px;
+}
+
+// 修改消息窗样式
+.el-message-box {
+  border-radius: 2px;
+  padding-bottom: 0px;
+
+  .el-message-box__header {
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #d6d6d6a1;
+
+    .el-message-box__title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .el-message-box__close {
+      cursor: pointer;
+      color: #757575;
+      font-weight: 900;
+      font-size: 20px;
+    }
+
+    .el-message-box__close.el-icon-close:before {
+      // content: "\e79d";
+    }
+
+    .el-message-box__headerbtn {
+      top: 20px;
+    }
+  }
+
+  .el-message-box__btns {
+    border-top: 1px solid #e4e7ed;
+    padding: 10px 15px;
+  }
+}
+
+// 自定义【删除】消息窗
+.el-message-box__wrapper,
+.myDelMsg {
+  .el-message-box__content {
+    height: 136px;
+
+    .el-message-box__container {
+      position: inherit;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .el-message-box__status {
+        color: #0079fe;
+        font-size: 66px !important;
+        position: inherit;
+        transform: inherit;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+      }
+
+      .el-message-box__message {
+        align-items: flex-start;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .el-message-box__btns {
+    text-align: center;
+  }
+}
+
+// 自定义【退出系统】消息窗
+.logOutMessageBox {
+  .el-message-box__content {
+    height: 100px;
+
+    .el-message-box__container {
+      align-items: center;
+    }
+  }
+}
+
+// 修改input=“search”的样式
+.el-input-group--append {
+  .el-input__inner {
+    border-right: 0 !important;
+  }
+
+  .el-input__inner:focus {
+    border-color: #409EFF;
+    outline: 0;
+  }
+
+  .el-input-group__append {
+    background-color: #fff;
+  }
+
+  .el-input__inner:focus~.el-input-group__append {
+    border-color: #409EFF;
+    outline: 0;
+  }
+}
+
+.el-input-group--append.is-active {
+  .el-input__inner {
+    border-color: #409EFF;
+    outline: 0;
+  }
+
+  .el-input-group__append {
+    background-color: #409EFF;
+  }
+}
+
+// 弹窗 fixed
+.popup-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+// 标头 通用样式
+.headerT-commonStyle {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+
+  span {
+    float: left;
+  }
+
+  span:nth-child(1) {
+    width: 5px;
+    height: 20px;
+    margin-top: 5px;
+    margin-right: 10px;
+    background-color: #0079fe;
+  }
+
+  span:nth-child(2) {
+    white-space: nowrap;
+    text-transform: none;
+    font-family: "微软雅黑 Bold", "微软雅黑 Regular", "微软雅黑", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    color: #2f3846;
+    text-align: left;
+    line-height: 30px;
+  }
+
+  span:nth-child(3) {
+    float: right;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    display: flex;
+    font-size: 12px;
+    color: #999999;
+    background-color: rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(228, 228, 228, 1);
+    border-radius: 0px;
+  }
+
+  .el-icon-arrow-left:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+
+  .el-icon-arrow-left:before {
+    color: #333;
+    font-weight: 700;
+  }
+}
+
+// 修改 for="functionIds" + el-form-item__label 的样式
+.avue-form:not(.avue--detail) .el-form-item__label[for="functionIds"] {
+  background-color: rgba(0, 121, 254, 0.05);
+  color: rgb(0, 121, 254);
+  padding-bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 6px;
+}
+
+// 修改 for="meaning" + el-form-item__label 的样式
+.avue-form:not(.avue--detail) .el-form-item__label[for="meaning"] {
+  background-color: rgba(0, 121, 254, 0.05);
+  color: rgb(0, 121, 254);
+  padding-bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 6px;
+}
+
+// 修改 for="condition" + el-form-item__label 的样式
+.avue-form:not(.avue--detail) .el-form-item__label[for="condition"] {
+  background-color: rgba(0, 121, 254, 0.05);
+  color: rgb(0, 121, 254);
+  padding-bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 6px;
+}
+
+// 修改 for="required-title" + el-form-item__label 的样式
+.avue-form:not(.avue--detail) .el-form-item__label[for="required-title"] {
+  padding-bottom: 0;
+}
+
+.avue-form:not(.avue--detail) .el-form-item__label[for="required-title"]:before {
+  content: '*';
+  color: #F56C6C;
+  margin-right: 4px;
+}
+
+// 修改 label-position="required-title" + avue-form__item--required-title 的样式
+.avue-form:not(.avue--detail) .avue-form__item--required-title[label-position="required-title"] {
+  margin-bottom: 0;
+}
+
+// 自定义 my-checkbox-radio-class 盒子样式
+.avue-form:not(.avue--detail) .my-checkbox-radio-class {
+  border: 1px solid #d7d7d7;
+  border-top: none;
+  padding: 12px;
+  height: 131px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+  .el-radio-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .el-radio {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.avue-form.avue--detail .my-checkbox-radio-class {
+  padding: 12px;
+  height: 131px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  .el-radio-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .el-radio {
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Oswald-Bold";
+    src: url("../fonts/Oswald-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "iconfont";
+    src: url("../iconfont/font_3759182_d42xit7yt7i.woff2") format("woff2"),
+        url("../iconfont/font_3759182_d42xit7yt7i.woff") format("woff"),
+        url("../iconfont/font_3759182_d42xit7yt7i.ttf") format("truetype");
+}
+
+body {
+    font-family: arial !important;
+}

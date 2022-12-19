@@ -1,0 +1,7 @@
+/* 
+ * 打包部署到线上的部分样式bug   （原因暂时未知？？？）
+ * 备注：本地运行可以注释以下代码 
+ */
+.el-dialog .el-dialog__header .el-dialog__headerbtn {
+  top: 21px !important;
+}

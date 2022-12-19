@@ -1,0 +1,41 @@
+<!--
+ * @Author: xcl
+ * @Date: 2022-10-31 09:21:44
+ * @LastEditors: xcl
+ * @LastEditTime: 2022-12-16 11:01:20
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+  <title>代码自动生成</title>
+  <!-- <title><%= htmlWebpackPlugin.options.title %></title> -->
+  <!-- 全局配置和变量数据 -->
+  <script src="./config.js"></script>
+  <script src="./data.js"></script>
+  <!-- jquery-3.5.1 -->
+  <script src="./jquery.min.js"></script>
+  <!-- index.css-->
+  <link rel="stylesheet" href="./index.css">
+  <!-- index.js -->
+  <script src="./index.js"></script>
+  <!-- 拖拽排序 -->
+  <script src="./Sortable.min.js"></script>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>
